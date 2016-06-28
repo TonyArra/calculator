@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Kristin's Calculator</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+</head>
+
+<body>
+
+<h1>Calculator</h1>
+
+<div id="main">
+    <form>
+        <input type="number" name="operand" id="operand" title="Operand">
+        <input type="button" id="addBtn" value="+">
+        <input type="button" id="subtractBtn" value="-">
+        <input type="button" id="equalsBtn" value="=">
+    </form>
+</div>
+
+<!--[if lt IE 9]>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+<!--JQuery-->
+<script src="js/lib/jquery.min.js"></script>
+
+<!--Calculator-->
+<script src="js/Calculator.js"></script>
+
+<script>
+    $(document).ready(function () {
+        new Calculator("Kristin's Calculator");
+    })
+</script>
+
+</body>
+</html>
