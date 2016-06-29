@@ -1,13 +1,25 @@
+/**
+ * Calculator Class
+ *
+ * Performs addition and subtraction on two operands.
+ *
+ * @author Tony <ttonyarra@gmail.com>
+ * @author Kristin
+ */
 class Calculator {
 
+    /**
+     * Default constructor for Calculator
+     *
+     * @param {string} name Name of your calculator
+     */
     constructor(name) {
-        /**
-         * Name of your Calculator
-         */
         this.setName(name);
 
         /**
          * jQuery reference for calculator
+         *
+         * @type {jQuery}
          */
         this.$calculator = $('#calculator');
 
@@ -15,6 +27,8 @@ class Calculator {
          * Operation to be performed when the '=' button is pressed.
          *
          * This is set by the last operation-button pressed.
+         *
+         * @type {string}
          */
         this.currentOperation = null;
 
